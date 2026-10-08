@@ -122,8 +122,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#analysis-pages" id="toc-analysis-pages" class="nav-link active" data-scroll-target="#analysis-pages">Analysis Pages</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -148,8 +154,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This website explores a dataset of 104 well-known films released between 1980 and 2025. The dataset includes information about each film’s franchise, production budget, worldwide revenue, runtime, and IMDb rating. The following pages explore several relationships and patterns in the data.</p>
+<section id="analysis-pages" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-pages">Analysis Pages</h2>
+<ul>
+<li><a href="./budget-revenue.html">Budget and Revenue</a></li>
+<li><a href="./runtime-rating.html">Runtime and Ratings</a></li>
+<li><a href="./bond.html">The Bond Films</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -225,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/caojingyu050226-spec\.github\.io\/datasci350-quiz02\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
