@@ -1,0 +1,22 @@
+---
+title: "The Bond Films"
+---
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+bond = films[films["franchise"] == "James Bond"]
+```
+
+The Bond films in this dataset range from `{python} int(bond["year"].min())` to `{python} int(bond["year"].max())`.
+
+## Bond Revenue Overtime
+```{python}
+plt.plot(bond["year"], bond["revenue_musd"])
+plt.xlabel("Year")
+plt.ylabel("Worldwide revenue (millions of US dollars)")
+plt.show()
+```
