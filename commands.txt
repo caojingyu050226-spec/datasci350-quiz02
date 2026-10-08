@@ -1,7 +1,13 @@
 git clone https://github.com/caojingyu050226-spec/datasci350-quiz02.git
 cd datasci350-quiz02
+
 quarto create project website .
 
+touch commands.txt
+touch budget-revenue.qmd
+touch runtime-rating.qmd
+touch bond.qmd
+rm about.qmd
 git add .gitignore
 git commit -m "Add gitignore"
 
