@@ -5,3 +5,13 @@ quarto create project website .
 git add .gitignore
 git commit -m "Add gitignore"
 
+quarto render
+ls -a
+git add .
+git commit -m "Add site pages and freeze"
+
+quarto publish gh-pages
+
+git add .
+git commit -m "Add command log"
+git push
